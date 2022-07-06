@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -73,5 +73,77 @@ h1 {
     border: 0;
 }
 
+ */
 
+
+ *{
+    margin: 0;
+    padding: 0;
+    color: azure;
+    font-weight: lighter;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    background: url("./peakpx.jpg");
+}
+
+#dash1 {
+    text-align: center;
+    padding: 10px;
+}
+
+#city {
+    padding: 5px;
+    margin: 5px;
+}
+
+#searchButton{
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 12px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    margin: 10px;
+}
+
+
+#resultContainer{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-bottom: 100vh;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 1300px;
+    border: 5px solid rgba(39, 34, 102, 0.829);    
+    border-radius: 10px;
+    background-color: black;
+}
+
+#cardContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 1200px;    
+    border: 30px solid rgb(31, 82, 82);    
+    border-radius: 10px;
+}
 

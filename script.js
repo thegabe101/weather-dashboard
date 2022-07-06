@@ -1,3 +1,5 @@
+//draw time header first 
+
 const timeEl = document.getElementById('time');
 const dateEl = document.getElementById('date');
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -18,33 +20,24 @@ setInterval(() => {
 
 }, 1000);
 
+const APIKey = "2104664de283a1ec8c91d0762df90dad"
+
+function fetchWeather() {
+
+
+    var requestUrl = 'https://api.openweathermap.org/data/2.5/forecast?q=';
+    var cityEl = document.getElementById("city");
+    var cityName = document.getElementById("cityName");
+    cityName.innerHTML = cityEl.value;
+
+fetch(requestUrl+cityEl.value+'&appid=2104664de283a1ec8c91d0762df90dad')
+.then(function (response) {
+    return response.json();
+})
+.then(function (data) {
+    console.log(data)
 
 //next task is to declare weather variables and API Key
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // const timeEl = document.getElementById('time');
@@ -73,4 +66,4 @@ setInterval(() => {
 // displayWeather(data); {
 //     let {humidity, sunrise, sunset, wind_speed, temp_max, temp_min,} = data.current;
 
-// }
+// 

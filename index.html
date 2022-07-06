@@ -5,34 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Weather Forecaster</title>
   </head>
-  <div>
-    <header>
-      <h1>Weather Dashboard</h1>
-      <h2>
-        <span id="time"></span> <span id="date"></span> <span id="time-zone"></span>
-      </h2>
-    </header>
-  </div>
   <body>
-    <main>
-        <form>
-            <input
-              id="searchArea"
-              class="input is-info"
-              type="text"
-              placeholder="Search for a city here"
+    <header id="dash1">
+      <h1>Weather Dashboard || <span id="time"></span></h1>
+      <h1><span id="date"></span></h1>
+      <p>City: <input type="text" id="city" /></p>
+      <button type="button" id="searchButton" onclick="fetchWeather()">
+        Search
+      </button>
+      <h2 id="cityName">City Here</h2>
+    </header>
+    <div id="resultContainer">
+      <div id="cardContainer">
+        <div class="icons">
+          <p class="weather" id="day1"></p>
+          <div class="defaultImage">
+            <img
+              src="./duo1ze-xtgONQzGgOE-unsplash.jpg"
+              class="imgClass"
+              id="img1"
             />
-            <button id="weatherSearchBtn" class="button is-info" type="submit">
-              Get Weather
-            </button>
-          </form>
+          </div>
+          <p class="minValues" id="day1Min"></p>
+          <p class="maxValues" id="day1Max"></p>
+        </div>
+        <div class="icons">
+          <p class="weather" id="day2"></p>
+          <div class="image">
+            <img
+              src="./duo1ze-xtgONQzGgOE-unsplash.jpg"
+              class="imgClass"
+              id="img2"
+            />
+          </div>
+          <p class="minValues" id="day2Min"></p>
+          <p class="maxValues" id="day2Max"></p>
+        </div>
+        <div class="icons">
+          <p class="weather" id="day3"></p>
+          <div class="image">
+            <img
+              src="./duo1ze-xtgONQzGgOE-unsplash.jpg"
+              class="imgClass"
+              id="img3"
+            />
+          </div>
+          <p class="minValues" id="day3Min"></p>
+          <p class="maxValues" id="day3Max"></p>
+        </div>
+        <div class="icons">
+          <p class="weather" id="day4"></p>
+          <div class="image">
+            <img
+              src="./duo1ze-xtgONQzGgOE-unsplash.jpg"
+              class="imgClass"
+              id="img4"
+            />
+          </div>
+          <p class="minValues" id="day4Min"></p>
+          <p class="maxValues" id="day4Max"></p>
+        </div>
+        <div class="icons">
+          <p class="weather" id="day5"></p>
+          <div class="image">
+            <img
+              src="./duo1ze-xtgONQzGgOE-unsplash.jpg"
+              class="imgClass"
+              id="img5"
+            />
+          </div>
+          <p class="minValues" id="day5Min"></p>
+          <p class="maxValues" id="day5Max"></p>
+        </div>
       </div>
-      <div>
-        <section id="resultArea">Result here</section>
-      </div>
-    </main>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
