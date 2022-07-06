@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background:url('./peakpx.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+}
+
+header {
+    background-image: linear-gradient(90deg, lightblue, blue);
+
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 42px;
+}
+
+#time {
+    margin-left: 845px;
+    font-size: 36px;
+}
+
+#searchArea {
+    display: inline-block;
+    columns: 1;
+}
+
+#resultArea {
+    display: inline-block;
+}
+
+#weatherCard {
+    display: flex;
+    justify-content: center;
+    font-size: 42px;
+}
+
+#fiveDayForecast {
+    display: flex;
+    justify-content: center;
+    font-size: 42px;
+}
+
+
+#weatherSearchBtn {
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+
+
+
