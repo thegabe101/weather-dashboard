@@ -97,7 +97,12 @@ body {
     padding: 5px;
     margin: 20px;
     color: black;
+    box-shadow: #5E5DF0 10px;
 }
+/* 
+#prevListStyle {
+
+} */
 
 #searchButton {
     background: #5E5DF0;
@@ -128,7 +133,7 @@ body {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     height: 400px;
-    width: 1200px;    
+    width: 1200px;
 }
 
 .panels {
