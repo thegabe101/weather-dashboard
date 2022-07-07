@@ -12,55 +12,69 @@
     <header id="dash1">
       <h1>Weather Dashboard || <span id="time"></span></h1>
       <h1><span id="date"></span></h1>
-      <p>City: <input type="text" id="city" /></p>
-      <button type="button" id="searchButton">Search</button>
+      <p>City: <input type="search" id="input" /></p>
+      <button type="button" id="searchButton" onclick="fetchWeather()">
+        Search
+      </button>
       <h2 id="cityName">City Here</h2>
     </header>
-    <div>
-      <!--struggling with how to actually display data. decided on 5 simple panels, with text areas to write in data from API pull. clunky. will try with temps first.-->
-      <div id="cardContainer">
-        <div class="panels">
-          <p class="weather" id="day1"></p>
-          <div>
-            <img src="./duo1ze-xtgONQzGgOE-unsplash.jpg" class="defaultImg" />
+    <body>
+      <div>
+        <!--struggling with how to actually display data. decided on 5 simple panels, with text areas to write in data from API pull. clunky. will try with temps first.-->
+        <div id="cardContainer">
+          <div class="panels">
+            <p class="weather" id="day1"></p>
+            <div>
+              <img src="./duo1ze-xtgONQzGgOE-unsplash.jpg" class="defaultImg" />
+            </div>
+            <p class="minTemp" id="min1"></p>
+            <p class="maxTemp" id="max1"></p>
+            <p class="wind" id="wind1"></p>
+            <p class="gust" id="gust1"></p>
           </div>
-          <p class="minTemp" id="min1"></p>
-          <p class="maxTemp" id="max1"></p>
-        </div>
-        <div class="panels">
-          <p class="weather" id="day2"></p>
-          <div class="image">
-            <img src="./duo1ze-xtgONQzGgOE-unsplash.jpg" class="defaultImg" />
+          <div class="panels">
+            <p class="weather" id="day2"></p>
+            <div class="image">
+              <img src="./duo1ze-xtgONQzGgOE-unsplash.jpg" class="defaultImg" />
+            </div>
+            <p class="minTemp" id="min2"></p>
+            <p class="maxValues" id="max2"></p>
+            <p class="wind" id="wind2"></p>
+            <p class="gust" id="gust2"></p>
           </div>
-          <p class="minTemp" id="min2"></p>
-          <p class="maxValues" id="max2"></p>
-        </div>
-        <div class="panels">
-          <p class="weather" id="day3"></p>
-          <div class="image">
-            <img src="./duo1ze-xtgONQzGgOE-unsplash.jpg" class="defaultImg" />
+          <div class="panels">
+            <p class="weather" id="day3"></p>
+            <div class="image">
+              <img src="./duo1ze-xtgONQzGgOE-unsplash.jpg" class="defaultImg" />
+            </div>
+            <p class="minTemp" id="min3"></p>
+            <p class="maxValues" id="max3"></p>
+            <p class="wind" id="wind3"></p>
+            <p class="gust" id="gust3"></p>
           </div>
-          <p class="minTemp" id="min3"></p>
-          <p class="maxValues" id="max3"></p>
-        </div>
-        <div class="panels">
-          <p class="weather" id="day4"></p>
-          <div class="image">
-            <img src="./duo1ze-xtgONQzGgOE-unsplash.jpg" class="defaultImg" />
+          <div class="panels">
+            <p class="weather" id="day4"></p>
+            <div class="image">
+              <img src="./duo1ze-xtgONQzGgOE-unsplash.jpg" class="defaultImg" />
+            </div>
+            <p class="minTemp" id="min4"></p>
+            <p class="maxValues" id="max4"></p>
+            <p class="wind" id="wind4"></p>
+            <p class="gust" id="gust4"></p>
           </div>
-          <p class="minTemp" id="min4"></p>
-          <p class="maxValues" id="max4"></p>
-        </div>
-        <div class="panels">
-          <p class="weather" id="day5"></p>
-          <div class="image">
-            <img src="./duo1ze-xtgONQzGgOE-unsplash.jpg" class="defaultImg" />
+          <div class="panels">
+            <p class="weather" id="day5"></p>
+            <div class="image">
+              <img src="./duo1ze-xtgONQzGgOE-unsplash.jpg" class="defaultImg" />
+            </div>
+            <p class="minTemp" id="min5"></p>
+            <p class="maxValues" id="max5"></p>
+            <p class="wind" id="wind5"></p>
+            <p class="gust" id="gust5"></p>
           </div>
-          <p class="minTemp" id="min5"></p>
-          <p class="maxValues" id="max5"></p>
         </div>
       </div>
-    </div>
+    </body>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="script.js"></script>
   </body>

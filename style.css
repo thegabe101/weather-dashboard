@@ -93,9 +93,10 @@ body {
     padding: 10px;
 }
 
-#city {
+#input {
     padding: 5px;
-    margin: 5px;
+    margin: 20px;
+    color: black;
 }
 
 #searchButton {
