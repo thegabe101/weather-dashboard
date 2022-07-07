@@ -21,30 +21,36 @@ setInterval(() => {
 }, 1000);
 //this is my api key for open weather; not sure if this remains good forever. also not sure whether there is some reason to not make an API key a const but it seems like a const would be the right choice. 
 const APIKey = "2104664de283a1ec8c91d0762df90dad"
-
+$('#searchButton').on('click', fetchWeather());
+console.log("clicked");
 
 function fetchWeather() {
-
+    var cityText = document.getElementById('cityName');
     var requestUrl = 'https://api.openweathermap.org/data/2.5/forecast?q=';
-    var cityEl = document.getElementById("city");
-    var cityName = document.getElementById("cityName");
-    cityName.innerHTML = cityEl.value;
-    $('#searchButton').on('click', fetchWeather());
+    var citySearch = $('city').val().trim();
+    console.log(citySearch);
+    
 
-fetch(requestUrl+cityEl.value+'&appid=2104664de283a1ec8c91d0762df90dad')
+localStorage.setItem("city", citySearch);
+
+fetch(requestUrl)
 .then(function (response) {
     return response.json();
 })
 .then(function (data) {
     console.log(data)
-    
+    cityText.textContent = data.name;
+
+
     //this is a loop that can grab the min/max temps and write them into the weather panels 
     for(i = 0; i<5; i++){
         document.getElementById("min" + (i+1)).innerHTML = "Min: " + Number(data.list[i].main.temp_min - 273.15).toFixed(1)+ "°";
+        document.getElementById()
     }
 
     for(i = 0; i<5; i++){
         document.getElementById("max" + (i+1)).innerHTML = "Max: " + Number(data.list[i].main.temp_max - 273.15).toFixed(2) + "°";
+        document.getElementById
     }
 })
 
