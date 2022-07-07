@@ -98,7 +98,7 @@ body {
     margin: 5px;
 }
 
-#searchButton{
+#searchButton {
     background: #5E5DF0;
     border-radius: 999px;
     box-shadow: #5E5DF0 0 10px 20px -10px;
@@ -120,30 +120,39 @@ body {
     margin: 10px;
 }
 
-
-#resultContainer{
+#cardContainer {
     position: absolute;
-    top: 70%;
-    left: 50%;
-    margin-bottom: 100vh;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    height: 500px;
-    width: 1300px;
-    border: 5px solid rgba(39, 34, 102, 0.829);    
-    border-radius: 10px;
-    background-color: black;
-}
-
-#cardContainer{
-    position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     height: 400px;
     width: 1200px;    
-    border: 30px solid rgb(31, 82, 82);    
-    border-radius: 10px;
 }
+
+.panels {
+    display: inline-bock;
+    float: left;
+    height: 300px;
+    width: 190px;
+    margin: 20px;
+    margin-right: 20px;
+    border: 5px solid rgb(14, 113, 167);
+    border-radius: 10px;
+    background: black;
+}
+
+
+.defaultImg {
+    height: 70px;
+    width: 100%;
+}
+
+.weather {
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
 

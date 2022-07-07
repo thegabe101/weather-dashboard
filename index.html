@@ -8,79 +8,60 @@
     <title>Weather Forecaster</title>
   </head>
   <body>
+    <!--rewriting HTML completely because original version had too many flaws. nowhere to display data correctly.-->
     <header id="dash1">
       <h1>Weather Dashboard || <span id="time"></span></h1>
       <h1><span id="date"></span></h1>
       <p>City: <input type="text" id="city" /></p>
-      <button type="button" id="searchButton" onclick="fetchWeather()">
-        Search
-      </button>
+      <button type="button" id="searchButton">Search</button>
       <h2 id="cityName">City Here</h2>
     </header>
-    <div id="resultContainer">
+    <div>
+      <!--struggling with how to actually display data. decided on 5 simple panels, with text areas to write in data from API pull. clunky. will try with temps first.-->
       <div id="cardContainer">
-        <div class="icons">
+        <div class="panels">
           <p class="weather" id="day1"></p>
-          <div class="defaultImage">
-            <img
-              src="./duo1ze-xtgONQzGgOE-unsplash.jpg"
-              class="imgClass"
-              id="img1"
-            />
+          <div>
+            <img src="./duo1ze-xtgONQzGgOE-unsplash.jpg" class="defaultImg" />
           </div>
-          <p class="minValues" id="day1Min"></p>
-          <p class="maxValues" id="day1Max"></p>
+          <p class="minTemp" id="min1"></p>
+          <p class="maxTemp" id="max1"></p>
         </div>
-        <div class="icons">
+        <div class="panels">
           <p class="weather" id="day2"></p>
           <div class="image">
-            <img
-              src="./duo1ze-xtgONQzGgOE-unsplash.jpg"
-              class="imgClass"
-              id="img2"
-            />
+            <img src="./duo1ze-xtgONQzGgOE-unsplash.jpg" class="defaultImg" />
           </div>
-          <p class="minValues" id="day2Min"></p>
-          <p class="maxValues" id="day2Max"></p>
+          <p class="minTemp" id="min2"></p>
+          <p class="maxValues" id="max2"></p>
         </div>
-        <div class="icons">
+        <div class="panels">
           <p class="weather" id="day3"></p>
           <div class="image">
-            <img
-              src="./duo1ze-xtgONQzGgOE-unsplash.jpg"
-              class="imgClass"
-              id="img3"
-            />
+            <img src="./duo1ze-xtgONQzGgOE-unsplash.jpg" class="defaultImg" />
           </div>
-          <p class="minValues" id="day3Min"></p>
-          <p class="maxValues" id="day3Max"></p>
+          <p class="minTemp" id="min3"></p>
+          <p class="maxValues" id="max3"></p>
         </div>
-        <div class="icons">
+        <div class="panels">
           <p class="weather" id="day4"></p>
           <div class="image">
-            <img
-              src="./duo1ze-xtgONQzGgOE-unsplash.jpg"
-              class="imgClass"
-              id="img4"
-            />
+            <img src="./duo1ze-xtgONQzGgOE-unsplash.jpg" class="defaultImg" />
           </div>
-          <p class="minValues" id="day4Min"></p>
-          <p class="maxValues" id="day4Max"></p>
+          <p class="minTemp" id="min4"></p>
+          <p class="maxValues" id="max4"></p>
         </div>
-        <div class="icons">
+        <div class="panels">
           <p class="weather" id="day5"></p>
           <div class="image">
-            <img
-              src="./duo1ze-xtgONQzGgOE-unsplash.jpg"
-              class="imgClass"
-              id="img5"
-            />
+            <img src="./duo1ze-xtgONQzGgOE-unsplash.jpg" class="defaultImg" />
           </div>
-          <p class="minValues" id="day5Min"></p>
-          <p class="maxValues" id="day5Max"></p>
+          <p class="minTemp" id="min5"></p>
+          <p class="maxValues" id="max5"></p>
         </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
